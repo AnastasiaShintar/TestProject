@@ -20,6 +20,8 @@ public class ResultPage extends AbstractPage{
 	private WebElement currency;
 	@FindBy(css = "#currency_dropdown_top > ul:nth-child(1) > li.currency_USD > a > span.seldescription")
 	private WebElement usd;
+	@FindBy(css = "#filter_price > div:nth-child(2) > a:nth-child(1) > svg:nth-child(2)")
+	private WebElement priceRange;
 	
 	
 	public void CompareDates() {
@@ -28,9 +30,32 @@ public class ResultPage extends AbstractPage{
 	}
 	
 	public void ChangeCarrency() {
-		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		currency.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		usd.click();
+	}
+	
+	public void ChoosePriceRange() {
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		priceRange.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	

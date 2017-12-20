@@ -30,7 +30,13 @@ public class Steps {
 	public void CompareCheckOutDate() {
 		ResultPage resultPage = new ResultPage(driver);
 //		resultPage.CompareDates();
+	}
+	
+	public void ComparePrice() {
+		ResultPage resultPage = new ResultPage(driver);
 		resultPage.ChangeCarrency();
+		resultPage.ChoosePriceRange();
+		
 	}
 
 }

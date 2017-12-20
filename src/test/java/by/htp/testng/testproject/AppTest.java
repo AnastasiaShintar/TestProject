@@ -25,9 +25,13 @@ public class AppTest {
 		steps.HotelSearch();
 	}
 	
+//	@Test
+//	public void CompareCheckOutDate() {
+//		steps.CompareCheckOutDate();
+//	}
 	@Test
-	public void CompareCheckOutDate() {
-		steps.CompareCheckOutDate();
+	public void ComparePrice() {
+		steps.ComparePrice();
 	}
 	
 
