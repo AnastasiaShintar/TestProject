@@ -10,6 +10,7 @@ package by.htp.testng.testproject.pages;
 
 		public AbstractPage(WebDriver driver)
 		{
+
 			this.driver = driver;
 		}
 	}

@@ -20,7 +20,7 @@ public class ResultPage extends AbstractPage{
 	private WebElement currency;
 	@FindBy(css = "#currency_dropdown_top > ul:nth-child(1) > li.currency_USD > a > span.seldescription")
 	private WebElement usd;
-	@FindBy(css = "#filter_price > div:nth-child(2) > a:nth-child(1) > svg:nth-child(2)")
+	@FindBy(css = "#filter_price > div:nth-child(2) > a:nth-child(1)")
 	private WebElement priceRange;
 	
 	
@@ -56,6 +56,10 @@ public class ResultPage extends AbstractPage{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void CompareResultPrice() {
+		
 	}
 	
 	

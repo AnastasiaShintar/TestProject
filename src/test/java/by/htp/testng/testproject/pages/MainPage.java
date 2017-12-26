@@ -19,7 +19,7 @@ public class MainPage extends AbstractPage {
 	@FindBy(id = "ss")
 	private WebElement searchLineCity;
 
-	@FindBy(xpath = "//*[@id=\"frm\"]/div[2]/div/div[1]/ul[1]/li[1]/b[1]")
+	@FindBy(css = "li.sb-autocomplete__item-with_photo:nth-child(1)")
 	private WebElement minskCity;
 
 	@FindBy(css = "#frm > div.sb-searchbox__row.u-clearfix.-submit.sb-searchbox__footer.-last > div.sb-searchbox-submit-col.-submit-button > button")
@@ -30,6 +30,7 @@ public class MainPage extends AbstractPage {
 
 	public void DataInput() {
 		searchLineCity.sendKeys("Минск");
+		
 		minskCity.click();
 		try {
 			Thread.sleep(1000);
